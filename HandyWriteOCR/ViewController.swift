@@ -7,14 +7,34 @@
 //
 
 import UIKit
+import ACEDrawingView
+import SwiftyTesseract
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var drawingView: ACEDrawingView!
+    @IBOutlet weak var label: UILabel!
+    
+    let swiftyTesseract = SwiftyTesseract(language: .english)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        drawingView.delegate = self
+        drawingView.lineWidth = 5
+        
     }
-
-
+    
+    @IBAction func onClearButton(_ sender: Any) {
+        drawingView.clear()
+        self.label.text = ""
+    }
 }
 
+extension ViewController: ACEDrawingViewDelegate {
+    func drawingView(_ view: ACEDrawingView!, didEndDrawUsing tool: ACEDrawingTool!) {
+        swiftyTesseract.performOCR(on: view.image) { recognizedString in
+            guard let text = recognizedString else { return }
+            self.label.text = text
+        }
+    }
+}

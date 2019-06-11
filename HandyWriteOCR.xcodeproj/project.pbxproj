@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44013E9D8C3ECB6FECFA5AB0 /* Pods_HandyWriteOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7169E8356C4C9ABE15ACDB90 /* Pods_HandyWriteOCR.framework */; };
+		A21F084B22B009040042DA78 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = A21F084A22B009040042DA78 /* tessdata */; };
 		A21FE5CC22AFFB01004C2B8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FE5CB22AFFB01004C2B8B /* AppDelegate.swift */; };
 		A21FE5CE22AFFB01004C2B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FE5CD22AFFB01004C2B8B /* ViewController.swift */; };
 		A21FE5D122AFFB01004C2B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21FE5CF22AFFB01004C2B8B /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50F91EE9FAA731CCDDD370D2 /* Pods-HandyWriteOCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyWriteOCR.release.xcconfig"; path = "Target Support Files/Pods-HandyWriteOCR/Pods-HandyWriteOCR.release.xcconfig"; sourceTree = "<group>"; };
+		7169E8356C4C9ABE15ACDB90 /* Pods_HandyWriteOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandyWriteOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21F084A22B009040042DA78 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		A21FE5C822AFFB01004C2B8B /* HandyWriteOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandyWriteOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21FE5CB22AFFB01004C2B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A21FE5CD22AFFB01004C2B8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		A21FE5D222AFFB03004C2B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A21FE5D522AFFB03004C2B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A21FE5D722AFFB03004C2B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECACE62A47ADD3439346D28B /* Pods-HandyWriteOCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyWriteOCR.debug.xcconfig"; path = "Target Support Files/Pods-HandyWriteOCR/Pods-HandyWriteOCR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44013E9D8C3ECB6FECFA5AB0 /* Pods_HandyWriteOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F4DC5EAA0D3BF355FF896B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECACE62A47ADD3439346D28B /* Pods-HandyWriteOCR.debug.xcconfig */,
+				50F91EE9FAA731CCDDD370D2 /* Pods-HandyWriteOCR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A21FE5BF22AFFB01004C2B8B = {
 			isa = PBXGroup;
 			children = (
 				A21FE5CA22AFFB01004C2B8B /* HandyWriteOCR */,
 				A21FE5C922AFFB01004C2B8B /* Products */,
+				6F4DC5EAA0D3BF355FF896B8 /* Pods */,
+				E771AB3AF9971A5EECE96915 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				A21FE5D222AFFB03004C2B8B /* Assets.xcassets */,
 				A21FE5D422AFFB03004C2B8B /* LaunchScreen.storyboard */,
 				A21FE5D722AFFB03004C2B8B /* Info.plist */,
+				A21F084A22B009040042DA78 /* tessdata */,
 			);
 			path = HandyWriteOCR;
+			sourceTree = "<group>";
+		};
+		E771AB3AF9971A5EECE96915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7169E8356C4C9ABE15ACDB90 /* Pods_HandyWriteOCR.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A21FE5DA22AFFB03004C2B8B /* Build configuration list for PBXNativeTarget "HandyWriteOCR" */;
 			buildPhases = (
+				BD1CC562C3C326565D9DBD79 /* [CP] Check Pods Manifest.lock */,
 				A21FE5C422AFFB01004C2B8B /* Sources */,
 				A21FE5C522AFFB01004C2B8B /* Frameworks */,
 				A21FE5C622AFFB01004C2B8B /* Resources */,
+				D30030B82F9AF5D75AC9745C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21FE5D622AFFB03004C2B8B /* LaunchScreen.storyboard in Resources */,
+				A21F084B22B009040042DA78 /* tessdata in Resources */,
 				A21FE5D322AFFB03004C2B8B /* Assets.xcassets in Resources */,
 				A21FE5D122AFFB01004C2B8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD1CC562C3C326565D9DBD79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandyWriteOCR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D30030B82F9AF5D75AC9745C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HandyWriteOCR/Pods-HandyWriteOCR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ACEDrawingView/ACEDrawingView.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTesseract/SwiftyTesseract.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACEDrawingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTesseract.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HandyWriteOCR/Pods-HandyWriteOCR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A21FE5C422AFFB01004C2B8B /* Sources */ = {
@@ -280,6 +365,7 @@
 		};
 		A21FE5DB22AFFB03004C2B8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECACE62A47ADD3439346D28B /* Pods-HandyWriteOCR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		A21FE5DC22AFFB03004C2B8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50F91EE9FAA731CCDDD370D2 /* Pods-HandyWriteOCR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
