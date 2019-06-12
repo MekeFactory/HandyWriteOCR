@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         drawingView.delegate = self
         drawingView.lineWidth = 5
         
+        swiftyTesseract.whiteList = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
     
     @IBAction func onClearButton(_ sender: Any) {
